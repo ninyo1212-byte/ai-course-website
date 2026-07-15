@@ -383,7 +383,7 @@
 - n8n Docs: HTTP Request node  
   https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.httprequest/
 - MDN: Overview of HTTP  
-  https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
+  https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview
 - Microsoft Learn: Create a relationship between tables by using a lookup column  
   https://learn.microsoft.com/en-us/power-apps/maker/data-platform/data-platform-entity-lookup
 

@@ -268,13 +268,13 @@
 המקורות שנבדקו לפני כתיבת השיעור:
 
 - OpenAI Docs: Prompt engineering  
-  https://platform.openai.com/docs/guides/prompt-engineering
+  https://developers.openai.com/api/docs/guides/prompt-engineering
 - Anthropic Docs: Prompt engineering overview  
-  https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview
+  https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
 - Google AI for Developers: Prompt design strategies  
   https://ai.google.dev/gemini-api/docs/prompting-strategies
 - Microsoft Learn: Prompt engineering techniques  
-  https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering
+  https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/prompt-engineering
 
 המידע בשיעור נכתב בעברית פשוטה, תוך התאמה לקהל מתחילים ולמטרות הקורס, ולא כהעתקה מהמקורות.
 

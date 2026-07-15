@@ -245,7 +245,7 @@ AI יכול להציע. אדם מאשר.
 - OpenAI: Why language models hallucinate  
   https://openai.com/index/why-language-models-hallucinate/
 - Anthropic Docs: Reduce hallucinations  
-  https://docs.anthropic.com/en/docs/test-and-evaluate/strengthen-guardrails/reduce-hallucinations
+  https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations
 - NIST: AI Risk Management Framework  
   https://www.nist.gov/itl/ai-risk-management-framework
 - Google AI for Developers: Responsible Generative AI Toolkit  

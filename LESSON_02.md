@@ -242,7 +242,7 @@
 המקורות שנבדקו לפני כתיבת השיעור:
 
 - OpenAI: Agents SDK  
-  https://platform.openai.com/docs/guides/agents
+  https://developers.openai.com/api/docs/guides/agents
 - Microsoft Learn: AI strategy - Cloud Adoption Framework  
   https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/strategy
 - n8n Docs: Tutorial - Build an AI workflow in n8n  

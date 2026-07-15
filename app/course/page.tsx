@@ -91,6 +91,24 @@ export default function CoursePage() {
                   </section>
                 )}
 
+                {part.buildLabs.length > 0 && (
+                  <section className="build-labs-section">
+                    <div className="build-labs-heading">
+                      <span className="completion-label">בנייה מעשית · V1.2</span>
+                      <p>כאן בונים בפועל את השלב הבא בפרויקט המרכזי.</p>
+                    </div>
+                    <div className="build-labs-grid">
+                      {part.buildLabs.map((lab) => (
+                        <section className="completion-block build-lab-block" key={lab.id}>
+                          <span className="build-lab-label">מעבדת בנייה מעשית · מעבדה {lab.id}</span>
+                          <h3>{lab.title}</h3>
+                          <MarkdownContent content={lab.content} />
+                        </section>
+                      ))}
+                    </div>
+                  </section>
+                )}
+
                 <p className="completion-next-step">לאחר שסיימת את התרגיל, עברת על ה־Checklist ושמרת את התוצר בפרויקט — אפשר להמשיך לחלק הבא.</p>
               </div>
             </details>

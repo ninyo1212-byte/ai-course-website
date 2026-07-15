@@ -341,13 +341,13 @@ ChatGPT או Claude.
 - OpenAI: ChatGPT overview  
   https://chatgpt.com/overview/
 - Anthropic: Claude overview  
-  https://www.anthropic.com/claude
+  https://claude.com/product/overview
 - Google: Gemini overview  
   https://gemini.google/overview/
 - Perplexity Docs: Overview  
   https://docs.perplexity.ai/home
 - Microsoft Learn: Prompt engineering techniques  
-  https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering
+  https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/prompt-engineering
 
 המידע בשיעור נכתב בעברית פשוטה, תוך התאמה לקהל מתחילים ולמטרות הקורס, ולא כהעתקה מהמקורות.
 

@@ -264,9 +264,9 @@ Perplexity מתמקד בחיפוש מבוסס AI. במקום רק לנהל שי�
 - OpenAI: ChatGPT overview  
   https://chatgpt.com/overview/
 - Anthropic: Claude overview  
-  https://www.anthropic.com/claude
+  https://claude.com/product/overview
 - Anthropic Docs: Models overview  
-  https://docs.anthropic.com/en/docs/about-claude/models/overview
+  https://platform.claude.com/docs/en/about-claude/models/overview
 - Google: Gemini overview  
   https://gemini.google/overview/
 - Google AI for Developers: Gemini API models  

@@ -5,6 +5,8 @@ const root = process.cwd();
 
 export type Lesson = { id: string; title: string; content: string };
 
+export type BuildLab = { id: number; title: string; content: string };
+
 export type CoursePart = {
   id: number;
   title: string;
@@ -15,6 +17,7 @@ export type CoursePart = {
   advancedPractice?: string;
   clientPractice?: string;
   qualityPractice?: string;
+  buildLabs: BuildLab[];
 };
 
 export function readMarkdown(filename: string) {
@@ -60,13 +63,43 @@ function extractSection(markdown: string, headingPattern: RegExp) {
   return { title: heading[2].trim(), content: contentLines.join("\n") };
 }
 
+function getBuildLabs(markdown: string): BuildLab[] {
+  const matches = [...markdown.matchAll(/^## מעבדה (\d+)\s+—\s+(.+)$/gm)];
+  const ids = matches.map((match) => Number(match[1]));
+  const uniqueIds = new Set(ids);
+
+  if (matches.length !== 5) {
+    throw new Error(`Expected exactly 5 build labs, found ${matches.length}`);
+  }
+
+  if (uniqueIds.size !== ids.length) {
+    throw new Error("Build lab numbers must be unique");
+  }
+
+  const expectedIds = [1, 2, 3, 4, 5];
+  if (!expectedIds.every((id) => uniqueIds.has(id))) {
+    throw new Error(`Build labs must be numbered 1 through 5; found: ${ids.join(", ")}`);
+  }
+
+  return expectedIds.map((id) => {
+    const section = extractSection(markdown, new RegExp(`^## מעבדה ${id}\\s+—`));
+    return {
+      id,
+      title: section.title.replace(/^מעבדה \d+\s+—\s+/, ""),
+      content: section.content,
+    };
+  });
+}
+
 export function getCourseParts(): CoursePart[] {
   const lessons = getLessons();
   const courseIndex = readMarkdown("COURSE_INDEX.md");
   const practicePack = readMarkdown("PRACTICE_PACK_V1_1.md");
   const partChecklists = readMarkdown("PART_CHECKLISTS_V1_1.md");
   const advancedPractice = readMarkdown("ADVANCED_PRACTICE_LAYER.md");
+  const buildLabs = getBuildLabs(readMarkdown("PROJECT_BUILD_PLAN_V1_2.md"));
   const lessonRanges = [[1, 5], [6, 10], [11, 15], [16, 21], [22, 26], [27, 32], [33, 36]];
+  const buildLabIdsByPart: Record<number, number[]> = { 4: [1, 2, 3], 5: [4], 7: [5] };
 
   const advancedWorkflow = extractSection(advancedPractice, /^### תרגול 1:/).content;
   const clientPractice = extractSection(advancedPractice, /^### תרגול 2:/).content;
@@ -89,6 +122,7 @@ export function getCourseParts(): CoursePart[] {
       advancedPractice: id === 6 ? advancedWorkflow : undefined,
       clientPractice: id === 7 ? clientPractice : undefined,
       qualityPractice: id === 7 ? qualityPractice : undefined,
+      buildLabs: (buildLabIdsByPart[id] ?? []).map((labId) => buildLabs[labId - 1]),
     };
   });
 }

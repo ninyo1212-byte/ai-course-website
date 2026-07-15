@@ -482,7 +482,7 @@ Make, n8n, APIs ו-Webhooks עובדים הרבה פעמים עם מידע מו�
 - MDN: Working with JSON  
   https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/JSON
 - MDN: Overview of HTTP  
-  https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
+  https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview
 - n8n Docs: Workflows  
   https://docs.n8n.io/workflows/
 - n8n Docs: Referencing data  

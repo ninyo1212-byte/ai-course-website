@@ -239,7 +239,7 @@
 - Microsoft Learn: Introduction to generative AI and agents  
   https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/
 - OpenAI API Docs: Key concepts  
-  https://platform.openai.com/docs/concepts
+  https://developers.openai.com/api/docs/concepts
 
 המידע בשיעור נכתב בעברית פשוטה, תוך התאמה לקהל מתחילים ולמטרות הקורס, ולא כהעתקה מהמקורות.
 

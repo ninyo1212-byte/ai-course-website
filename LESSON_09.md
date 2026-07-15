@@ -241,13 +241,13 @@ AI יכול לעזור במחקר, אבל הוא לא מחליף בדיקת מק
 - OpenAI Docs: File inputs  
   https://developers.openai.com/api/docs/guides/file-inputs
 - OpenAI Docs: Prompt engineering  
-  https://platform.openai.com/docs/guides/prompt-engineering
+  https://developers.openai.com/api/docs/guides/prompt-engineering
 - Anthropic Help Center: Upload files to Claude  
-  https://support.anthropic.com/en/articles/8241126-what-kinds-of-documents-can-i-upload-to-claude-ai
+  https://support.claude.com/en/articles/8241126-upload-files-to-claude
 - Google Gemini Help: Upload and analyze files in Gemini Apps  
   https://support.google.com/gemini/answer/14903178
 - Microsoft Learn: Prompt engineering techniques  
-  https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering
+  https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/prompt-engineering
 
 המידע בשיעור נכתב בעברית פשוטה, תוך התאמה לקהל מתחילים ולמטרות הקורס, ולא כהעתקה מהמקורות.
 

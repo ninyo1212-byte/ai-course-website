@@ -358,7 +358,7 @@ API נוסף שומר את התוצאה במערכת אחרת.
 - MDN: API glossary  
   https://developer.mozilla.org/en-US/docs/Glossary/API
 - MDN: Overview of HTTP  
-  https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
+  https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview
 - GitHub Docs: About webhooks  
   https://docs.github.com/en/webhooks/about-webhooks
 - n8n Docs: Webhook node  
