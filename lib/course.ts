@@ -25,11 +25,11 @@ export function readMarkdown(filename: string) {
 }
 
 export function getLessons(): Lesson[] {
-  return Array.from({ length: 36 }, (_, index) => getLesson(String(index + 1).padStart(2, "0"))!).filter(Boolean);
+  return Array.from({ length: 37 }, (_, index) => getLesson(String(index + 1).padStart(2, "0"))!).filter(Boolean);
 }
 
 export function getLesson(id: string): Lesson | null {
-  if (!/^\d{2}$/.test(id) || Number(id) < 1 || Number(id) > 36) return null;
+  if (!/^\d{2}$/.test(id) || Number(id) < 1 || Number(id) > 37) return null;
   const content = readMarkdown(`LESSON_${id}.md`);
   const title = /^#\s+שיעור\s+\d+:\s*(.+)$/m.exec(content)?.[1] ?? `שיעור ${Number(id)}`;
   return { id, title, content };
@@ -98,7 +98,7 @@ export function getCourseParts(): CoursePart[] {
   const partChecklists = readMarkdown("PART_CHECKLISTS_V1_1.md");
   const advancedPractice = readMarkdown("ADVANCED_PRACTICE_LAYER.md");
   const buildLabs = getBuildLabs(readMarkdown("PROJECT_BUILD_PLAN_V1_2.md"));
-  const lessonRanges = [[1, 5], [6, 10], [11, 15], [16, 21], [22, 26], [27, 32], [33, 36]];
+  const lessonRanges = [[1, 5], [6, 10], [11, 15], [16, 21], [22, 26], [27, 32], [33, 37]];
   const buildLabIdsByPart: Record<number, number[]> = { 4: [1, 2, 3], 5: [4], 7: [5] };
 
   const advancedWorkflow = extractSection(advancedPractice, /^### תרגול 1:/).content;

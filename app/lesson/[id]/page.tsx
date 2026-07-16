@@ -13,7 +13,7 @@ export default async function LessonPage({ params }: { params: Promise<{ id: str
   const lesson = getLesson(id);
   if (!lesson) notFound();
   const previous = Number(id) > 1 ? String(Number(id) - 1).padStart(2, "0") : null;
-  const next = Number(id) < 36 ? String(Number(id) + 1).padStart(2, "0") : null;
+  const next = Number(id) < 37 ? String(Number(id) + 1).padStart(2, "0") : null;
 
   return (
     <section className="content-page lesson-page">
